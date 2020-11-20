@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  background-color: $secondary;
+  padding: 1rem;
+  border-radius: $radius;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  .pricing-plan {
+    border-bottom: $border-size solid $accent2;
+    &:last-child {
+      border-bottom: none;
+    }
+    img {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .pricing-header {
+      color: $accent1;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .pricing-features {
+      margin: 50px 0 25px;
+      color: $ternary;
+      .pricing-features-item {
+        list-style-type: none;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        padding: 0.5rem;
+        border-top: $border-size solid $accent2;
+        &:last-child {
+          border-bottom: $border-size solid $accent2;
+        }
+      }
+    }
+    .pricing-price {
+      color: $accent1;
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .pricing-button {
+      border: $border-size solid $ternary;
+      border-radius: $radius;
+      color: $accent1;
+      display: inline-block;
+      padding: 0.8rem 2.5rem;
+      text-decoration: none;
+      margin: 1.5rem 0;
+      transition: background-color 300ms ease-in-out;
+      &:hover,
+      &:focus {
+        background-color: $accent2;
+      }
+      &.is-featured {
+        border-color: $primary;
+        background-color: $primary;
+        color: $secondary;
+        &:hover,
+        &:focus {
+          background-color: $accent1;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid $accent2;
+      padding: 25px 50px;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

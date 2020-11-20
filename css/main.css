@@ -1,0 +1,133 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.panel .pricing-plan {
+  border-bottom: 1px solid #dec9e9;
+}
+
+.panel .pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.panel .pricing-plan img {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.panel .pricing-plan .pricing-header {
+  color: #5a189a;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.panel .pricing-plan .pricing-features {
+  margin: 50px 0 25px;
+  color: #bc00dd;
+}
+
+.panel .pricing-plan .pricing-features .pricing-features-item {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  border-top: 1px solid #dec9e9;
+}
+
+.panel .pricing-plan .pricing-features .pricing-features-item:last-child {
+  border-bottom: 1px solid #dec9e9;
+}
+
+.panel .pricing-plan .pricing-price {
+  color: #5a189a;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.panel .pricing-plan .pricing-button {
+  border: 1px solid #bc00dd;
+  border-radius: 10px;
+  color: #5a189a;
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  text-decoration: none;
+  margin: 1.5rem 0;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.panel .pricing-plan .pricing-button:hover, .panel .pricing-plan .pricing-button:focus {
+  background-color: #dec9e9;
+}
+
+.panel .pricing-plan .pricing-button.is-featured {
+  border-color: #a100f2;
+  background-color: #a100f2;
+  color: #f1f1f1;
+}
+
+.panel .pricing-plan .pricing-button.is-featured:hover, .panel .pricing-plan .pricing-button.is-featured:focus {
+  background-color: #5a189a;
+}
+
+@media screen and (min-width: 900px) {
+  .panel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .panel .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #dec9e9;
+    padding: 25px 50px;
+  }
+  .panel .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #a100f2;
+  font-family: "Open Sans", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
